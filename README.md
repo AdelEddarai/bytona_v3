@@ -1,4 +1,5 @@
 # Property & Agent Data Dashboard
+![Alt text for the image](genide.png")
 
 This Streamlit application provides an interactive dashboard to visualize and analyze data from 'Agent' and 'Property' tables in a PostgreSQL database. It leverages Plotly for rich visualizations and Streamlit's interactive components for filtering and exploration.
 
