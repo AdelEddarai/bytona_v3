@@ -19,16 +19,23 @@ This Streamlit application provides an interactive dashboard to visualize and an
 ```mermaid
 graph TD
     User[User] -->|Accesses| StreamlitApp[Streamlit App]
-    StreamlitApp -->|Reads .env| EnvFile[.env]
+
+    StreamlitApp -->|Reads| EnvFile[".env file"]
+
     StreamlitApp -->|Connects via psycopg2| PostgreSQL[PostgreSQL Database]
+
     PostgreSQL -->|Fetches Agent Data| AgentTable[Agent Table]
     PostgreSQL -->|Fetches Property Data| PropertyTable[Property Table]
+
     AgentTable -->|Data| StreamlitApp
     PropertyTable -->|Data| StreamlitApp
+
     StreamlitApp -->|Merges & Processes Data| PandasDF[Pandas DataFrames]
     PandasDF -->|Generates Charts| PlotlyCharts[Plotly Charts]
+
     StreamlitApp -->|Displays| PlotlyCharts
-    StreamlitApp -->|Displays| StreamlitWidgets[Streamlit Widgets (Filters, Tabs)]
+    StreamlitApp -->|Displays| StreamlitWidgets["Streamlit Widgets (Filters, Tabs)"]
+
 ```
 
 ## Setup and Run
