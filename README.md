@@ -37,16 +37,7 @@ graph TD
 
 Create a `.env` file in the root directory of the project with the following content. **Replace placeholder values with your actual database credentials and table names.**
 
-```dotenv
-# bytona (POSTGRESQL)
-DB_HOST=ep-shrill-moon-a4ch0eso.us-east-1.aws.neon.tech
-DB_PORT=5432
-DB_NAME=neondb
-DB_USER=neondb_owner
-DB_PASSWORD=cJMzTfBy9Z3Q
-DB_TABLE_AGENT=Agent
-DB_TABLE_PROPERTY=Property
-```
+
 
 ### 2. Install Dependencies
 
